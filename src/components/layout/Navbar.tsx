@@ -3,12 +3,15 @@
 import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import { FC, useState } from "react";
+import { Button } from "../ui/Button";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 interface NavBarProps {}
 
 const NavBar: FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-
+  const pathName = usePathname();
   return (
     <header className="">
       <div className="w-full bg-gray-800 text-white">
@@ -17,24 +20,29 @@ const NavBar: FC = () => {
             Thinking Maths
           </Link>
           <div className="nav-links flex space-x-9 items-center justify-around text-lg ">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/categories">Categories</Link>
-            <button className="border-2 border-white p-2">Contact</button>
-            <button
-              className="flex items-center space-x-2 font-bold"
-              onClick={() => setDropdownOpen(dropdownOpen)}
+            <Link href="/" className={`${pathName === "/" ? "font-bold" : ""}`}>
+              Home
+            </Link>
+            <Link
+              href="/about"
+              className={`${pathName === "/about" ? "font-bold" : ""}`}
             >
-              Account
-              <ArrowDownTrayIcon />
-            </button>
-            {dropdownOpen && (
-              <div className="dropdown">
-                <button>Login</button>
-                <button>Register</button>
-              </div>
-            )}
+              About
+            </Link>
+            <Link
+              href="/resourceList"
+              className={`${pathName === "/resourceList" ? "font-bold" : ""}`}
+            >
+              Resources
+            </Link>
+            <Link
+              href="/contact"
+              className={`${pathName === "/contact" ? "font-bold" : ""}`}
+            >
+              Contact
+            </Link>
           </div>
+          <Button>Login</Button>
         </nav>
       </div>
     </header>
