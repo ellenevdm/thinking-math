@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { Button } from "../ui/Button";
 import { Activity } from "@/types/activity";
 
@@ -17,11 +17,20 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
     actName: string,
     actLink: string
   ) => {
+    if (!actLink) {
+      console.error("Invalid download link");
+      setDownloadState((prev) => ({ ...prev, [activityId]: "error" }));
+      return;
+    }
+
+    const resolvedLink = `${window.location.origin}${actLink}`; // Resolve the full URL
+    console.log(`Attempting to download from: ${resolvedLink}`);
+
     setDownloadState((prev) => ({ ...prev, [activityId]: "downloading" }));
     try {
-      const response = await fetch(actLink);
+      const response = await fetch(resolvedLink);
       if (!response.ok) {
-        throw new Error("Failed to download the file");
+        throw new Error(`Failed to download the file: ${response.statusText}`);
       }
 
       const blob = await response.blob();
@@ -38,18 +47,19 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
       setDownloadState((prev) => ({ ...prev, [activityId]: "downloaded" }));
       console.info(`${actName} is downloaded`);
     } catch (error) {
-      setDownloadState((prev) => ({ ...prev, [activityId]: "error" }));
       console.error("Error downloading the file:", error);
+      setDownloadState((prev) => ({ ...prev, [activityId]: "error" }));
     }
   };
-
   const getStatusText = (state: DownloadStateType | undefined) => {
+    if (!state || state === "idle") return null;
+
     switch (state) {
       case "downloading":
         return <span className="text-yellow-500 ml-2">Downloading...</span>;
       case "downloaded":
         return (
-          <span className="text-green-500 ml-2">Succesfully Downloaded</span>
+          <span className="text-green-500 ml-2">Successfully Downloaded</span>
         );
       case "error":
         return <span className="text-red-500 ml-2">Error</span>;
@@ -57,6 +67,23 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
         return null;
     }
   };
+
+  useEffect(() => {
+    const timeoutIds: NodeJS.Timeout[] = [];
+
+    Object.entries(downloadState).forEach(([activityId, state]) => {
+      if (state === "downloaded" || state === "error") {
+        const timeoutId = setTimeout(() => {
+          setDownloadState((prev) => ({ ...prev, [activityId]: "idle" }));
+        }, 10000);
+        timeoutIds.push(timeoutId);
+      }
+    });
+
+    return () => {
+      timeoutIds.forEach((id) => clearTimeout(id));
+    };
+  }, [downloadState]);
 
   return (
     <>

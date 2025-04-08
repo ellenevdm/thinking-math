@@ -17,12 +17,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "Grade 8 Algebra Basics activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "Grade 8 Algebra Basics activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -65,12 +65,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade9 Geometry activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade9 Geometry activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -112,12 +112,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade10 Trigonometry activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade10 Trigonometry activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -160,12 +160,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade12 Calculus activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade12 Calculus activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -207,12 +207,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade11 Statistics activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade11 Statistics activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -254,12 +254,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade7 Number Theory activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade7 Number Theory activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -302,12 +302,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade10 Finance activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade10 Finance activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -350,12 +350,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade8 Linear Equations activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade8 Linear Equations activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -397,12 +397,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade9 Shapes and Theorems activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade9 Shapes and Theorems activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [
@@ -444,12 +444,12 @@ export const resourceCards = [
       {
         actId: "mathact1",
         actName: "grade10 Trigonometric Ratios activity for classroom",
-        actLink: "/public/docs/Act1.pdf",
+        actLink: "/docs/Act1.pdf",
       },
       {
         actId: "mathact2",
         actName: "grade10 Trigonometric Ratios activity for teachers",
-        actLink: "/public/docs/Activity2.pdf",
+        actLink: "/docs/Activity2.pdf",
       },
     ],
     comments: [

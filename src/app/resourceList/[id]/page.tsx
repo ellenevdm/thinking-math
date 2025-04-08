@@ -1,6 +1,7 @@
 "use client";
 
 import CommentSection from "@/components/resources/CommentSection";
+import DownloadLinks from "@/components/resources/DownloadComponent";
 import { dummyComments } from "@/data/dummyComments";
 import { resourceCards } from "@/data/dummyResources";
 
@@ -37,27 +38,7 @@ const ResourcePage: FC = () => {
       <div className="flex flex-col items-center justify-center gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
       <div className="flex flex-col justify-center text-center gap-5 p-5 border-top-1 border-gray-200 border-b-1 mt-5">
         <h3 className="text-2xl font-bold"> Activities for this Resource</h3>
-        <div>
-          <li className="list-none flex  gap-2 justify-center">
-            <p className="font-semibold">Teachers Activity:</p>{" "}
-            <a
-              className="underline cursor-pointer hover:text-gray-600"
-              onClick={() => downloadActivity("Teachers Activity")}
-            >
-              Download {resource?.title} activity for {resource?.grade} teachers{" "}
-            </a>
-          </li>
-          <li className="list-none flex gap-2 justify-center">
-            <p className="font-semibold">Students Activity:</p>
-
-            <a
-              className="underline cursor-pointer hover:text-gray-600"
-              onClick={() => downloadActivity("Students Activity")}
-            >
-              Download {resource?.title} activity for {resource?.grade} students{" "}
-            </a>
-          </li>
-        </div>
+        <DownloadLinks activities={resource?.activities || []} />
       </div>
       <div className="flex flex-col gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
       <div className="flex flex-col gap-5 p-5 border-top-1 border-gray-200 border-b-1">
@@ -71,7 +52,7 @@ const ResourcePage: FC = () => {
         )}
       </div>
       <div>
-        <CommentSection comments={dummyComments} />
+        <CommentSection comments={resource.comments || []} />
       </div>
       <div className="flex flex-col items-center justify-center gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
     </div>

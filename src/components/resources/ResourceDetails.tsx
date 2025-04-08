@@ -2,6 +2,7 @@
 
 import { resourceCards } from "@/data/dummyResources";
 import { FC } from "react";
+import DownloadLinks from "./DownloadComponent";
 
 interface ResourceDetailsProps {
   id: string | undefined;
@@ -9,7 +10,7 @@ interface ResourceDetailsProps {
 
 const ResourceDetails: FC<ResourceDetailsProps> = ({ id }) => {
   const resource = resourceCards.find((resource) => resource.id === id);
-  const { title, description, date } = resource || {};
+  const { title, description, date, activities } = resource || {};
   !resource && (
     <div className="text-4xl font-extrabol">
       Resource not found, please try again later
@@ -24,20 +25,7 @@ const ResourceDetails: FC<ResourceDetailsProps> = ({ id }) => {
         </div>
         <div>
           <p className="font-bold text center"> Activity for this Resource</p>
-          <ul>
-            <li>
-              Activity 1:{" "}
-              <a onClick={() => console.log("Activity 1: Downloaded")}>
-                {resource?.title} Activity 1 PDF Download
-              </a>
-            </li>
-            <li>
-              Activity 2:{" "}
-              <a onClick={() => console.log("Activity 2: Downloaded")}>
-                Click to Download
-              </a>
-            </li>
-          </ul>
+          <DownloadLinks activities={activities || []} />
         </div>
       </div>
     </>
