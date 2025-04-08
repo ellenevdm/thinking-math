@@ -8,11 +8,6 @@ interface CommentProps {
 }
 
 const Comment: FC<CommentProps> = ({ comment, depth, onReply }) => {
-  const formattedDate =
-    typeof comment.date === "string"
-      ? comment.date
-      : comment.date.toLocaleDateString();
-
   return (
     <div
       className={`comment-item  p-3 flex justify-between items-center ${

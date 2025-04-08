@@ -1,16 +1,12 @@
 "use client";
 
-import { ArrowDownTrayIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Button } from "../ui/Button";
-import { useRouter } from "next/router";
+
 import { usePathname } from "next/navigation";
 
-interface NavBarProps {}
-
 const NavBar: FC = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const pathName = usePathname();
   return (
     <header className="">

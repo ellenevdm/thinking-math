@@ -2,7 +2,7 @@
 
 import CommentSection from "@/components/resources/CommentSection";
 import DownloadLinks from "@/components/resources/DownloadComponent";
-import { dummyComments } from "@/data/dummyComments";
+
 import { resourceCards } from "@/data/dummyResources";
 
 import { useParams } from "next/navigation";
@@ -18,9 +18,6 @@ const ResourcePage: FC = () => {
         Resource not found, please try again later
       </div>
     );
-  }
-  function downloadActivity(activity: string) {
-    console.log(`${activity} Downloaded`);
   }
 
   return (

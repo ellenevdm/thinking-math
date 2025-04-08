@@ -1,5 +1,3 @@
-import { getRandomDate } from "../lib/utils";
-
 // Resource Cards
 
 const categoryCards = [

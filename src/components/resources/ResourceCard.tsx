@@ -1,14 +1,5 @@
 import { FC } from "react";
 import { Resource } from "@/types/resource";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/Card";
-import { Button } from "../ui/Button";
 import Link from "next/link";
 import { dateFormat } from "@/lib/utils";
 
@@ -24,7 +15,7 @@ const ResourceCard: FC<ResourceCardProps> = ({ resource }) => {
     categoryId,
     grade,
     gradeId,
-    phase, // Added phase property
+
     phaseId,
     date,
     description,
