@@ -1,3 +1,6 @@
+import { Activity } from "./activity";
+import { CommentData } from "./comment";
+
 export type Resource = {
   id: string;
   title: string;
@@ -10,4 +13,6 @@ export type Resource = {
   phaseId: string;
   date: Date;
   wakeletcode?: string;
+  activities?: Activity[];
+  comments?: CommentData[];
 };

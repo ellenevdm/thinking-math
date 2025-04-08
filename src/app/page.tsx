@@ -1,6 +1,7 @@
 import NewResourceCard from "@/components/resources/NewResourceCards";
 import ResourceCard from "@/components/resources/NewResourceCards";
-import { resourceCards } from "@/data";
+import { resourceCards } from "@/data/dummyResources";
+
 import Image from "next/image";
 
 export default function Home() {

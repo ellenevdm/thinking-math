@@ -1,5 +1,5 @@
-import { resourceCards } from "@/data";
-import { Resource } from "@/types/types";
+import { resourceCards } from "@/data/dummyResources";
+import { Resource } from "@/types/resource";
 import React, {
   createContext,
   useContext,

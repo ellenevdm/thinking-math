@@ -1,10 +1,11 @@
 "use client";
 
 import { FC, useEffect, useState } from "react";
-import { resourceCards } from "@/data";
+
 import ResourceCard from "@/components/resources/ResourceCard";
 import ResourceFiltering from "@/components/resources/ResourceFiltering";
 import { FilterProvider } from "@/context/FilterContext";
+import { resourceCards } from "@/data/dummyResources";
 
 const ResourceListPage: FC = () => {
   const [searchQuery, setSearchQuery] = useState("");

@@ -1,9 +1,11 @@
 "use client";
-import { categoryCards, gradeCards, phaseCards } from "@/data";
+import { categoryCards } from "@/data/dummyCategories";
 import { FC, useState } from "react";
 
 import FilterCard from "../ui/FilterCard";
 import FilterToggle from "../ui/FilterToggle";
+import { gradeCards } from "@/data/dummyGrades";
+import { phaseCards } from "@/data/dummyPhases";
 
 interface ResourceFilteringProps {
   searchTerm: string;
