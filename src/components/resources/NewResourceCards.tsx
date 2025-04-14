@@ -1,15 +1,6 @@
 import { FC } from "react";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/Card";
+
 import Link from "next/link";
-import { Button } from "../ui/Button";
 import { dateFormat } from "@/lib/utils";
 
 interface NewResourceCardsProps {
