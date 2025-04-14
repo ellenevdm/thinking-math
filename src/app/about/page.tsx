@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FC } from "react";
 
 const AboutPage: FC = () => {
@@ -31,8 +32,8 @@ const AboutPage: FC = () => {
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                     Teachers, parents, and tutors who want to move beyond rote
                     learning and spark genuine interest in mathematics. Whether
-                    you're looking for inspiration, support, or ready-to-use
-                    materials, you're in the right place.
+                    you&apos;re looking for inspiration, support, or
+                    ready-to-use materials, you&apos;re in the right place.
                   </p>
                 </div>
               </div>{" "}
@@ -43,7 +44,7 @@ const AboutPage: FC = () => {
                   </h2>
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                     Our resources are designed to promote discussion,
-                    creativity, and independent thought. Whether it's
+                    creativity, and independent thought. Whether it&apos;s
                     downloadable activities, concept explanations, or classroom
                     tools, everything supports a thinking-first approach to
                     maths.
@@ -58,9 +59,9 @@ const AboutPage: FC = () => {
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
                     In our approach, pupils are encouraged to ask questions,
                     make connections, and explore ideas. We value reasoning over
-                    repetition, and we guide learners to understand the “why”
-                    behind the methods. This helps build lasting knowledge and
-                    flexible problem-solving skills.
+                    repetition, and we guide learners to understand the
+                    &quot;why&quot; behind the methods. This helps build lasting
+                    knowledge and flexible problem-solving skills.
                   </p>
                 </div>
               </div>
@@ -89,10 +90,12 @@ const AboutPage: FC = () => {
           </div>
           <div className="w-full lg:justify-start justify-center items-start flex">
             <div className="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
-              <img
+              <Image
                 className="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
                 src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/mistakes-allow-thinking-to-happen-math-teacher-for-teachers-tom-schiesswald.jpg"
                 alt="about Us image"
+                width={564}
+                height={646}
               />
             </div>
           </div>
