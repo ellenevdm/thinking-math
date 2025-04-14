@@ -10,10 +10,11 @@ import {
 } from "../ui/Card";
 import Link from "next/link";
 import { Button } from "../ui/Button";
+import { dateFormat } from "@/lib/utils";
 
 interface NewResourceCardsProps {
   title: string;
-  category: string;
+  date: Date;
   description: string;
   grade: string;
   id: string;
@@ -21,27 +22,27 @@ interface NewResourceCardsProps {
 
 const NewResourceCard: FC<NewResourceCardsProps> = ({
   title,
-  category,
+  date,
   description,
   grade,
   id,
 }) => {
   return (
-    <Card className="flex flex-col justify-between items-center p-">
-      <CardHeader className="w-full h-full text-center italic">
-        {category}
-      </CardHeader>
-      <CardContent className="flex-grow flex flex-col justify-center items-center gap-4">
-        <CardTitle className="font-bold">{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
-      </CardContent>
-      <CardFooter className="font-bold">{grade}</CardFooter>
-      <CardAction className="w-full self-center">
-        <Button className="w-full">
-          <Link href={`/resources/${id}`}>Go to</Link>
-        </Button>
-      </CardAction>
-    </Card>
+    <div className="flex flex-col justify-center items-center p-4 rounded-xl shadow-lg border border-gray-100">
+      <div className="w-full font-light bg-gray-100 p-0.5 text-center italic rounded-md ">
+        {dateFormat(date)}
+      </div>
+      <div className="flex-grow flex flex-col justify-center items-center gap-4">
+        <h2 className="font-bold mt-2">{title}</h2>
+        <p>{description}</p>
+      </div>
+      <div className="flex my-2 gap-1 w-full flex-wrap ">{grade}</div>
+      <div className="font-bold flex flex-col w-full m-2 border-t pt-2 justify-center items-center">
+        <button className="w-full bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive p-2 cursor-pointer ">
+          <Link href={`/resourceList/${id}`}>Go to</Link>
+        </button>
+      </div>
+    </div>
   );
 };
 

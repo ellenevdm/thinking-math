@@ -92,7 +92,7 @@ const ResourceListPage: FC = () => {
         />
       </div>
       <div>
-        <h1 className="font-extrabold text-7xl text-center">Resources</h1>
+        <h1 className="font-extrabold text-6xl text-center">Resources</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5">
           {filteredResources.map((card) => (
             <ResourceCard key={card.id} resource={card} />

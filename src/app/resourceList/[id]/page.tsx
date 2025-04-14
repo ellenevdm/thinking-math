@@ -22,7 +22,7 @@ const ResourcePage: FC = () => {
 
   return (
     <div className="w-1/2 mx-auto">
-      <div className="text-center  border-b-1 border-gray-200 p-5 ">
+      <div className="text-center p-5 ">
         {" "}
         <h1 className="text-5xl font-bold mb-5">{resource?.title}</h1>
         <div className="flex justify-between mb-5 border-b-1 border-gray-200 border-t-1 p-2">
@@ -33,25 +33,34 @@ const ResourcePage: FC = () => {
         <p>{resource?.description}</p>
       </div>
       <div className="flex flex-col items-center justify-center gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
-      <div className="flex flex-col justify-center text-center gap-5 p-5 border-top-1 border-gray-200 border-b-1 mt-5">
+      <div className="flex flex-col justify-center text-center gap-5 p-5">
         <h3 className="text-2xl font-bold"> Activities for this Resource</h3>
         <DownloadLinks activities={resource?.activities || []} />
       </div>
-      <div className="flex flex-col gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
-      <div className="flex flex-col gap-5 p-5 border-top-1 border-gray-200 border-b-1">
+
+      <div className="flex flex-col gap-5 p-5 ">
+        <div className="p-1 border-top-1 border-gray-200 border-b-1"></div>
         <h2 className="text-3xl font-bold text-center">Resources</h2>
 
-        {resource?.wakeletcode && (
-          <div
-            className="flex justify-center border-4 border-gray-400"
-            dangerouslySetInnerHTML={{ __html: resource.wakeletcode }}
-          ></div>
+        {resource?.wakeletcode ? (
+          <>
+            <div
+              className="flex justify-center border-4 border-gray-400"
+              dangerouslySetInnerHTML={{ __html: resource.wakeletcode }}
+            ></div>
+            <div className="p-1 border-top-1 border-gray-200 border-b-1"></div>
+            <div>
+              <CommentSection comments={resource.comments || []} />
+            </div>
+          </>
+        ) : (
+          <div className="text-center font-bold text-2xl">
+            No resources available for this resource
+          </div>
         )}
       </div>
-      <div>
-        <CommentSection comments={resource.comments || []} />
-      </div>
-      <div className="flex flex-col items-center justify-center gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
+
+      <div className="p-1 border-top-1 border-gray-200 border-t-1"></div>
     </div>
   );
 };

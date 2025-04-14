@@ -60,14 +60,14 @@ const ResourceFiltering: FC<ResourceFilteringProps> = ({
           </button>
         )}
       </div>
-      <div className="flex flex-col gap-10 items-center justify-center lg:w-5/6">
+      <div className="flex flex-col w-full gap-10 items-center justify-center lg:w-5/6">
         <FilterToggle
           filterName="Categories"
           onClick={toggleCategory}
           isActive={categoryActive}
         />
         {categoryActive && (
-          <div className="flex flex-wrap gap-2 items-center justify-start">
+          <div className="flex flex-wrap w-full gap-2 items-center justify-start">
             {categoryCards.map((cat) => (
               <FilterCard
                 dataId="category-card"
@@ -81,7 +81,7 @@ const ResourceFiltering: FC<ResourceFilteringProps> = ({
           </div>
         )}
       </div>
-      <div className="lg:w-5/6 flex flex-col gap-5 items-center justify-center">
+      <div className="lg:w-5/6 flex w-full flex-col gap-5 items-center justify-center">
         <FilterToggle
           filterName="Phases"
           onClick={togglePhase}

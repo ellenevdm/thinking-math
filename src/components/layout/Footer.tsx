@@ -6,7 +6,7 @@ const Footer: FC = () => {
   return (
     <footer>
       <div className="w-full bg-gray-800 text-white b-0 p-15">
-        <div className="flex justify-between items-center ">
+        <div className="flex flex-col lg:flex-row justify-between items-center ">
           <h1 className="text-3xl">Thinking Maths</h1>
           <div className="flex space-x-9 items-center justify-around text-lg">
             <button className="border-2 bg-white text-black font-bold p-2">

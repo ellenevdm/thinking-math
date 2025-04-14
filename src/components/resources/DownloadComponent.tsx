@@ -17,8 +17,8 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
     actName: string,
     actLink: string
   ) => {
-    if (!actLink) {
-      console.error("Invalid download link");
+    if (!actLink || !actLink.startsWith("/")) {
+      console.error("Invalid or missing download link:", actLink);
       setDownloadState((prev) => ({ ...prev, [activityId]: "error" }));
       return;
     }
@@ -52,19 +52,18 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
     }
   };
   const getStatusText = (state: DownloadStateType | undefined) => {
-    if (!state || state === "idle") return null;
+    if (!state) return "Download";
 
     switch (state) {
+      case "idle":
+        return <span>Download</span>;
       case "downloading":
-        return <span className="text-yellow-500 ml-2">Downloading...</span>;
-      case "downloaded":
-        return (
-          <span className="text-green-500 ml-2">Successfully Downloaded</span>
-        );
+        return <span className=" ml-2">Downloading...</span>;
       case "error":
-        return <span className="text-red-500 ml-2">Error</span>;
+        alert("Error downloading the file. Please try again later.");
+        return <span>Error</span>;
       default:
-        return null;
+        return "Download";
     }
   };
 
@@ -75,7 +74,7 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
       if (state === "downloaded" || state === "error") {
         const timeoutId = setTimeout(() => {
           setDownloadState((prev) => ({ ...prev, [activityId]: "idle" }));
-        }, 10000);
+        }, 5000);
         timeoutIds.push(timeoutId);
       }
     });
@@ -94,7 +93,7 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
           {activities.map((activity, index) => (
             <li key={activity.actId}>
               Activity {index + 1}: {activity.actName} -{" "}
-              <Button
+              <button
                 onClick={() =>
                   handleDownload(
                     activity.actId,
@@ -103,11 +102,10 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
                   )
                 }
                 disabled={downloadState[activity.actId] === "downloading"}
-                className="underline cursor-pointer hover:text-gray-600"
+                className="cursor-pointer hover:font-semibold  width-50 underline "
               >
-                Click to Download
-              </Button>
-              {getStatusText(downloadState[activity.actId])}
+                {getStatusText(downloadState[activity.actId])}
+              </button>
             </li>
           ))}
         </ul>
