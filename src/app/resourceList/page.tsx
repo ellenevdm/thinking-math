@@ -6,8 +6,11 @@ import ResourceCard from "@/components/resources/ResourceCard";
 import ResourceFiltering from "@/components/resources/ResourceFiltering";
 import { FilterProvider } from "@/context/FilterContext";
 import { resourceCards } from "@/data/dummyResources";
+import { useAuth } from "@/context/AuthContext";
+import Link from "next/link";
 
 const ResourceListPage: FC = () => {
+  const { isAuthMode } = useAuth();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedGrades, setSelectedGrades] = useState<string[]>([]);
@@ -79,7 +82,7 @@ const ResourceListPage: FC = () => {
   return (
     <div className="container mx-auto h-full flex flex-col lg:flex-row mt-5 gap-10">
       <div className="w-full lg:w-2/3 lg:border-r-2 border-gray-200 p-5">
-        <h3 className="font-bold text-2xl text-center">Filters</h3>
+        <h3 className="font-bold text-2xl text-center">Filters </h3>
         <ResourceFiltering
           searchTerm={searchQuery}
           selectedCategories={selectedCategories}
@@ -93,6 +96,15 @@ const ResourceListPage: FC = () => {
       </div>
       <div>
         <h1 className="font-extrabold text-6xl text-center">Resources</h1>
+        {isAuthMode && (
+          <p className="flex justify-center items-center gap-2 mt-5 mb-5">
+            <Link href="/resourceList/new-resource">
+              <button className="bg-black text-white p-2 rounded shadow">
+                Add New Resource
+              </button>
+            </Link>
+          </p>
+        )}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5">
           {filteredResources.map((card) => (
             <ResourceCard key={card.id} resource={card} />

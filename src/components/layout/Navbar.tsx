@@ -5,9 +5,11 @@ import { FC } from "react";
 import { Button } from "../ui/Button";
 
 import { usePathname } from "next/navigation";
+import { useAuth } from "@/context/AuthContext";
 
 const NavBar: FC = () => {
   const pathName = usePathname();
+  const { isAuthMode, toggleAuthMode } = useAuth();
   return (
     <header className="">
       <div className="w-full bg-gray-800 text-white">
@@ -38,7 +40,14 @@ const NavBar: FC = () => {
               Contact
             </Link>
           </div>
-          <Button>Login</Button>
+          <div>
+            <button
+              className="py-2 px-4 mr-2 bg-black rounded-md shadow-sm text-white hover:bg-gray-900 "
+              onClick={toggleAuthMode}
+            >
+              {isAuthMode ? "User" : "Admin"}
+            </button>
+          </div>
         </nav>
       </div>
     </header>

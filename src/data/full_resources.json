@@ -1,0 +1,802 @@
+[
+  {
+    "id": "1",
+    "title": "Algebra Basics #1",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-03-09T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Geometry Fundamentals #2",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-02-18T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Algebra Basics #3",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-02-16T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Geometry Fundamentals #4",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-06T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Algebra Basics #5",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-11-21T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Geometry Fundamentals #6",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-02-20T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Algebra Basics #7",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-03-28T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Geometry Fundamentals #8",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-04-21T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Algebra Basics #9",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-01-31T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Geometry Fundamentals #10",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-10-22T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Algebra Basics #11",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-09-27T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Geometry Fundamentals #12",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-05-23T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Algebra Basics #13",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-09-10T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Geometry Fundamentals #14",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-07-09T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Algebra Basics #15",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-06-29T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Geometry Fundamentals #16",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-25T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Algebra Basics #17",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-02-14T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Geometry Fundamentals #18",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-27T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Algebra Basics #19",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-02-28T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Geometry Fundamentals #20",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-12-19T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Algebra Basics #21",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-01-25T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Geometry Fundamentals #22",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-11-30T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Algebra Basics #23",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-01-15T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Geometry Fundamentals #24",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-04-13T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Algebra Basics #25",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-11T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Geometry Fundamentals #26",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-03-28T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Algebra Basics #27",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-08T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Geometry Fundamentals #28",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-03-01T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Algebra Basics #29",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-06-14T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Geometry Fundamentals #30",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-29T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Algebra Basics #31",
+    "category": "Algebra",
+    "categoryId": "Algebra1",
+    "description": "Introduction to algebraic concepts and operations.",
+    "grade": "Grade 8",
+    "gradeId": "grade8",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2024-08-20T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 8 Algebra Basics activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 8 Algebra Basics activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Geometry Fundamentals #32",
+    "category": "Geometry",
+    "categoryId": "Geometry2",
+    "description": "Basic principles of geometry including shapes, angles, and theorems.",
+    "grade": "Grade 9",
+    "gradeId": "grade9",
+    "phase": "Senior Phase",
+    "phaseId": "Senior",
+    "date": "2025-02-21T00:00:00",
+    "wakeletcode": "<iframe data-autoresize=\"false\" class=\"wakeletEmbed\" width=\"100%\" height=\"500px\" src=\"https://embed.wakelet.com/wakes/AQbzu4TmVEwV5e2LQFyjk/list?border=1&dark=1\" style=\"border: none\" allow=\"autoplay\"></iframe><!-- Please only call https://embed-assets.wakelet.com/wakelet-embed.js once per page --><script src=\"https://embed-assets.wakelet.com/wakelet-embed.js\" charset=\"UTF-8\"></script>",
+    "activities": [
+      {
+        "actId": "mathact1",
+        "actName": "Grade 9 Geometry activity for classroom",
+        "actLink": "/docs/Act1.pdf"
+      },
+      {
+        "actId": "mathact2",
+        "actName": "Grade 9 Geometry activity for teachers",
+        "actLink": "/docs/Activity2.pdf"
+      }
+    ]
+  }
+]

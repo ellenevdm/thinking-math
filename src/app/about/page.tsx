@@ -66,27 +66,6 @@ const AboutPage: FC = () => {
                 </div>
               </div>
             </div>
-            <button className="sm:w-fit w-full group px-3.5 py-2 bg-gray-800 hover:bg-gray-900 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
-              <span className="px-1.5 text-white text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">
-                Read More
-              </span>
-              <svg
-                className="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 18 18"
-                fill="none"
-              >
-                <path
-                  d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996"
-                  stroke="white"
-                  strokeWidth="1.6"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
           </div>
           <div className="w-full lg:justify-start justify-center items-start flex">
             <div className="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
@@ -96,6 +75,7 @@ const AboutPage: FC = () => {
                 alt="about Us image"
                 width={564}
                 height={646}
+                priority // Ensures the image is preloaded for consistent rendering
               />
             </div>
           </div>

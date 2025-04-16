@@ -126,3 +126,8 @@ html,
 body {
   @apply m-0 p-0 w-full h-screen;
 }
+
+button,
+a :not([disabled]) {
+  @apply cursor-pointer;
+}
