@@ -35,7 +35,13 @@ const ResourcePage: FC = () => {
       <div className="flex flex-col items-center justify-center gap-5 p-1 border-top-1 border-gray-200 border-b-1"></div>
       <div className="flex flex-col justify-center text-center gap-5 p-5">
         <h3 className="text-2xl font-bold"> Activities for this Resource</h3>
-        <DownloadLinks activities={resource?.activities || []} />
+        <DownloadLinks
+          activities={(resource?.activities || []).map((activity) => ({
+            id: activity.actId,
+            name: activity.actName,
+            link: activity.actLink,
+          }))}
+        />
       </div>
 
       <div className="flex flex-col gap-5 p-5 ">
@@ -49,9 +55,9 @@ const ResourcePage: FC = () => {
               dangerouslySetInnerHTML={{ __html: resource.wakeletcode }}
             ></div>
             <div className="p-1 border-top-1 border-gray-200 border-b-1"></div>
-            <div>
+            {/* <div>
               <CommentSection comments={resource.comments || []} />
-            </div>
+            </div> */}
           </>
         ) : (
           <div className="text-center font-bold text-2xl">

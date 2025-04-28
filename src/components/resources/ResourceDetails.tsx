@@ -27,7 +27,13 @@ const ResourceDetails: FC<ResourceDetailsProps> = ({ id }) => {
         </div>
         <div>
           <p className="font-bold text center"> Activity for this Resource</p>
-          <DownloadLinks activities={activities || []} />
+          <DownloadLinks
+            activities={(activities || []).map((activity) => ({
+              id: activity.actId,
+              name: activity.actName,
+              link: activity.actLink,
+            }))}
+          />
         </div>
       </div>
     </>

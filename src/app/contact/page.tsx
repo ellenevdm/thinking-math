@@ -1,3 +1,4 @@
+import EmailForm from "@/components/contact/EmailForm";
 import { FC } from "react";
 
 const ContactPage: FC = () => {
@@ -10,7 +11,9 @@ const ContactPage: FC = () => {
         </div>
       </div>
       <div className="lg:w-3/4 w-full h-[1200px] md:h-[60vh] lg:h-[100vh] bg-gray-100 shadow-lg flex flex-col lg:flex-row">
-        <div className="bg-gray-200 h: lg:w-2/3 lg:h-full"></div>
+        <div className="bg-gray-200 h: lg:w-2/3 lg:h-full">
+          <EmailForm />
+        </div>
         <div className="bg-gray-800 lg:w-1/3 lg:h-full"></div>
       </div>
     </div>

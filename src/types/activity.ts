@@ -1,5 +1,5 @@
 export type Activity = {
-  actId: string;
-  actName: string;
-  actLink: string;
+  id: string;
+  name: string;
+  link: string;
 };

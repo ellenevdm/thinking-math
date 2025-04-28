@@ -39,7 +39,6 @@ const AddNewResourceForm: FC<AddNewResourceFormProps> = () => {
               <select
                 className="border hover:cursor-pointer border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                 {...register("phase")}
-                onChange={(p) => setPhase(p.target.value)}
               >
                 <option disabled selected>
                   Select Phase
@@ -53,7 +52,10 @@ const AddNewResourceForm: FC<AddNewResourceFormProps> = () => {
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Grade</label>
-              <select className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary hover:cursor-pointer">
+              <select
+                {...register("grade")}
+                className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary hover:cursor-pointer"
+              >
                 <option disabled selected>
                   Select Grade
                 </option>

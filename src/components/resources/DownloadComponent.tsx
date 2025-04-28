@@ -91,20 +91,16 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
       ) : (
         <ul>
           {activities.map((activity, index) => (
-            <li key={activity.actId}>
-              Activity {index + 1}: {activity.actName} -{" "}
+            <li key={activity.id}>
+              Activity {index + 1}: {activity.name} -{" "}
               <button
                 onClick={() =>
-                  handleDownload(
-                    activity.actId,
-                    activity.actName,
-                    activity.actLink
-                  )
+                  handleDownload(activity.id, activity.name, activity.link)
                 }
-                disabled={downloadState[activity.actId] === "downloading"}
+                disabled={downloadState[activity.id] === "downloading"}
                 className="cursor-pointer hover:font-semibold  width-50 underline "
               >
-                {getStatusText(downloadState[activity.actId])}
+                {getStatusText(downloadState[activity.id])}
               </button>
             </li>
           ))}
