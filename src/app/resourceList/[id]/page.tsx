@@ -1,6 +1,5 @@
 "use client";
 
-import CommentSection from "@/components/resources/CommentSection";
 import DownloadLinks from "@/components/resources/DownloadComponent";
 
 import { resourceCards } from "@/data/dummyResources";

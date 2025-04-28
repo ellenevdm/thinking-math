@@ -1,5 +1,4 @@
 import { Activity } from "./activity";
-import { CommentData } from "./comment";
 
 export type Resource = {
   id: string;

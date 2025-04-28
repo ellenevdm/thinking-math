@@ -107,7 +107,17 @@ const ResourceListPage: FC = () => {
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 p-5">
           {filteredResources.map((card) => (
-            <ResourceCard key={card.id} resource={card} />
+            <ResourceCard
+              key={card.id}
+              resource={{
+                ...card,
+                activities: (card.activities ?? []).map((activity) => ({
+                  id: activity.actId,
+                  name: activity.actName,
+                  link: activity.actLink,
+                })),
+              }}
+            />
           ))}
         </div>
       </div>

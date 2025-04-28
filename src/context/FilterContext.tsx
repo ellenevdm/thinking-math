@@ -45,16 +45,36 @@ export const FilterProvider: FC<FilterProviderProps> = ({ children }) => {
       activeCategories.length === 0 &&
       activePhases.length === 0
     ) {
-      setFilteredResources(resourceCards);
+      setFilteredResources(
+        resourceCards.map((card) => ({
+          ...card,
+          activities: (card.activities ?? []).map((activity) => ({
+            id: activity?.actId ?? "",
+            name: activity?.actName ?? "",
+            link: activity?.actLink ?? "",
+          })),
+        }))
+      );
     } else {
       const filtered = resourceCards.filter(
         (card) =>
-          (activeGrades.length === 0 || activeGrades.includes(card.gradeId)) &&
+          (activeGrades.length === 0 ||
+            activeGrades.includes(card.gradeId ?? "")) &&
           (activeCategories.length === 0 ||
-            activeCategories.includes(card.categoryId)) &&
-          (activePhases.length === 0 || activePhases.includes(card.phaseId))
+            activeCategories.includes(card.categoryId ?? "")) &&
+          (activePhases.length === 0 ||
+            activePhases.includes(card.phaseId ?? ""))
       );
-      setFilteredResources(filtered);
+      setFilteredResources(
+        filtered.map((card) => ({
+          ...card,
+          activities: (card.activities ?? []).map((activity) => ({
+            id: activity?.actId ?? "",
+            name: activity?.actName ?? "",
+            link: activity?.actLink ?? "",
+          })),
+        }))
+      );
     }
   }, [activeGrades, activeCategories, activePhases]);
 

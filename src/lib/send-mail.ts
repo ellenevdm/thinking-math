@@ -34,6 +34,9 @@ export async function sendMail({
 }) {
   try {
     const isVerified = await transporter.verify();
+    if (!isVerified) {
+      throw new Error("SMTP server verification failed");
+    }
   } catch (error) {
     console.error(
       "Something went wrong",
@@ -45,7 +48,7 @@ export async function sendMail({
   }
   const info = await transporter.sendMail({
     from: SMTP_SERVER_USERNAME,
-    to: SITE_MAIL_RECEIVER,
+    to: sendTo || SITE_MAIL_RECEIVER,
     subject: `Thinking Math Message: ${subject}`,
     text: `
         You have a new message from Thinking Math

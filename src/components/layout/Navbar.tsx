@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { FC } from "react";
-import { Button } from "../ui/Button";
 
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";

@@ -2,14 +2,10 @@
 import { gradeCards } from "@/data/dummyGrades";
 import { phaseCards } from "@/data/dummyPhases";
 import { Resource } from "@/types/resource";
-import { FC, useState } from "react";
-import { set, SubmitHandler, useForm } from "react-hook-form";
+import { FC } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-interface AddNewResourceFormProps {}
-
-const AddNewResourceForm: FC<AddNewResourceFormProps> = () => {
-  const [grade, setGrade] = useState("");
-  const [phase, setPhase] = useState({});
+const AddNewResourceForm: FC = () => {
   const { register, handleSubmit, reset } = useForm<Resource>();
 
   const onSubmit: SubmitHandler<Resource> = (data) => {
