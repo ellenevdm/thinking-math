@@ -2,92 +2,86 @@
 import { gradeCards } from "@/data/dummyGrades";
 import { phaseCards } from "@/data/dummyPhases";
 import { Resource } from "@/types/resource";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
+
+import Input from "../ui/input";
+import Select from "../ui/select";
+import TextArea from "../ui/textarea";
+import Button from "../ui/Button";
 
 const AddNewResourceForm: FC = () => {
   const { register, handleSubmit, reset } = useForm<Resource>();
+  const [activities, setActivities] = useState<File[]>([]);
 
   const onSubmit: SubmitHandler<Resource> = (data) => {
     console.info("Form submitted with data:", data);
+    console.info("Uploaded activities:", activities);
     reset();
+    setActivities([]); // Clear the activities array after submission
   };
+
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files;
+    if (files) {
+      const newFiles = Array.from(files);
+      setActivities((prevActivities) => [...prevActivities, ...newFiles]);
+    }
+  };
+
+  // const handleRemoveFile = (index: number) => {
+  //   setActivities((prevActivities) =>
+  //     prevActivities.filter((_, i) => i !== index)
+  //   );
+  // };
   return (
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col gap-4 space-y-2 mt-2"
       >
-        <div className="flex gap-4 space-y-2 mt-2">
-          {" "}
+        <div className="flex flex-col lg:flex-row gap-4 space-y-2 mt-2">
           <div className="flex flex-col gap-2">
-            {" "}
             <p className="flex flex-col">
               <label className="font-semibold">Resource Title:</label>
-              <input
-                type="text"
-                {...register("title")}
-                className="border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+              <Input type="text" {...register("title")} />
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Phase</label>
-              <select
-                className="border hover:cursor-pointer border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              <Select
+                options={phaseCards}
                 {...register("phase")}
-              >
-                <option disabled selected>
-                  Select Phase
-                </option>
-                {phaseCards.map((phase) => (
-                  <option key={phase.id} value={phase.id}>
-                    {phase.name}
-                  </option>
-                ))}
-              </select>
+                defaultLabel="Select Phase"
+              />
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Grade</label>
-              <select
+              <Select
+                options={gradeCards}
                 {...register("grade")}
-                className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary hover:cursor-pointer"
-              >
-                <option disabled selected>
-                  Select Grade
-                </option>
-                {gradeCards.map((grade) => (
-                  <option key={grade.id} value={grade.id}>
-                    {grade.grade}
-                  </option>
-                ))}
-              </select>
+                optionLabelKey="grade"
+                defaultLabel="Select Grade"
+              />
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Resource Description:</label>
-              <textarea
+              <TextArea
                 placeholder="Add a description..."
                 {...register("description")}
-                className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </p>
           </div>
           <div>
             <p className="flex flex-col">
               <label className="font-semibold">Category</label>
-              <input
-                type="text"
-                {...register("category")}
-                className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                placeholder="Enter category"
-              />
+              <Input type="text" {...register("category")} />
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Resource Link:</label>
-              <textarea
-                rows={5}
-                placeholder="Paste wakeletcode here..."
+              <TextArea
+                rows={4}
                 {...register("wakeletcode")}
-                className="border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Paste wakelet code here"
               />
             </p>
             <p className="flex flex-col">
@@ -95,13 +89,32 @@ const AddNewResourceForm: FC = () => {
               <input
                 accept="pdf/*,.docx, .doc, .pptx, .ppt, .xlsx, .xls, .txt, .csv"
                 type="file"
-                {...register("activities")}
-                className="hover:cursor-pointer border  border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                multiple
+                onChange={handleFileChange}
+                className="hover:cursor-pointer border border-gray-300 rounded-sm p-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </p>
+            {activities.length > 0 && (
+              <div className="mt-2">
+                <h4 className="font-semibold">Selected Files:</h4>
+                <ul className="list-disc pl-5">
+                  {activities.map((file, index) => (
+                    <li
+                      key={index}
+                      className="text-sm flex justify-between items-center"
+                    >
+                      {file.name}
+                      <Button className="text-xs text-red-700 border ">
+                        Remove
+                      </Button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
-        <button className="bg-black text-white p-2 rounded-sm ">SUbmit</button>
+        <Button variant="primary">Submit Test</Button>
       </form>
     </>
   );

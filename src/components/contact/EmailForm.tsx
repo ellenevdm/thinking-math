@@ -3,6 +3,9 @@ import { ContactFormInputs, ContactFormSchema } from "@/types/validationScema";
 import { FC } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Input from "../ui/input";
+import TextArea from "../ui/textarea";
+import Button from "../ui/Button";
 
 const EmailForm: FC = () => {
   const {
@@ -17,50 +20,52 @@ const EmailForm: FC = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="space-y-6 bg-white p-6 rounded-lg shadow-md"
+      className="space-y-6 bg-white p-6 rounded-lg shadow-sm border mx-10"
     >
-      <div className="flex flex-col">
-        <label htmlFor="name" className="text-sm font-medium text-gray-700">
-          Name:
-        </label>
-        <input
-          type="text"
-          id="name"
-          {...register("name")}
-          className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        {errors.name && (
-          <span className="text-sm text-red-500 mt-1">
-            {errors.name.message}
-          </span>
-        )}
+      <div className="flex flex-col lg:flex-row justify-between gap-4 space-y-2 mt-2">
+        {" "}
+        <div className="flex flex-col w-full">
+          <label htmlFor="name" className="font-semibold">
+            Name:
+          </label>
+          <Input
+            id="name"
+            {...register("name")}
+            placeholder="Enter your name"
+          />
+          {errors.name && (
+            <span className="text-sm text-red-500 mt-1">
+              {errors.name.message}
+            </span>
+          )}
+        </div>
+        <div className="flex flex-col w-full">
+          <label htmlFor="email" className="font-semibold">
+            Email:
+          </label>
+          <Input
+            id="email"
+            type="email"
+            {...register("email")}
+            placeholder="Enter your email"
+          />
+          {errors?.email && (
+            <span className="text-sm text-red-500 mt-1">
+              {errors.email.message}
+            </span>
+          )}
+        </div>
       </div>
       <div className="flex flex-col">
-        <label htmlFor="email" className="text-sm font-medium text-gray-700">
-          Email:
-        </label>
-        <input
-          type="email"
-          id="email"
-          {...register("email")}
-          className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        {errors?.email && (
-          <span className="text-sm text-red-500 mt-1">
-            {errors.email.message}
-          </span>
-        )}
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="subject" className="text-sm font-medium text-gray-700">
+        <label htmlFor="subject" className="font-semibold">
           Subject:
         </label>
-        <input
-          type="text"
+        <Input
           id="subject"
           {...register("subject")}
-          className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          placeholder="Enter subject"
         />
+
         {errors.subject && (
           <span className="text-sm text-red-500 mt-1">
             {errors.subject.message}
@@ -68,26 +73,25 @@ const EmailForm: FC = () => {
         )}
       </div>
       <div className="flex flex-col">
-        <label htmlFor="message" className="text-sm font-medium text-gray-700">
+        <label htmlFor="message" className="font-semibold">
           Message:
         </label>
-        <textarea
+        <TextArea
           id="message"
+          rows={4}
           {...register("message")}
-          className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        ></textarea>
+          placeholder="What is your message?"
+        />
+
         {errors.message && (
           <span className="text-sm text-red-500 mt-1">
             {errors.message.message}
           </span>
         )}
       </div>
-      <button
-        type="submit"
-        className="w-full py-2 px-4 bg-blue-500 text-white font-medium rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-      >
+      <Button variant="primary" className="w-full">
         Send
-      </button>
+      </Button>
     </form>
   );
 };

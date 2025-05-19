@@ -31,11 +31,11 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {" "}
-        <div>
+        <div className="flex flex-col justify-between min-h-screen">
           {" "}
           <AuthProvider>
             <NavBar />
-            <div className="p-10">{children}</div>
+            {children}
             <Footer />
           </AuthProvider>
         </div>

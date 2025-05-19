@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from "react";
 
 import { Activity } from "@/types/activity";
+import { useAuth } from "@/context/AuthContext";
 
 interface DownloadLinksProps {
   activities: Activity[];
@@ -8,6 +9,8 @@ interface DownloadLinksProps {
 type DownloadStateType = "idle" | "downloading" | "downloaded" | "error";
 
 const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
+  const { isAuthMode } = useAuth();
+
   const [downloadState, setDownloadState] = useState<
     Record<string, DownloadStateType>
   >({});
@@ -93,15 +96,23 @@ const DownloadLinks: FC<DownloadLinksProps> = ({ activities }) => {
           {activities.map((activity, index) => (
             <li key={activity.id}>
               Activity {index + 1}: {activity.name} -{" "}
-              <button
-                onClick={() =>
-                  handleDownload(activity.id, activity.name, activity.link)
-                }
-                disabled={downloadState[activity.id] === "downloading"}
-                className="cursor-pointer hover:font-semibold  width-50 underline "
-              >
-                {getStatusText(downloadState[activity.id])}
-              </button>
+              <div className="flex space-x-1 justify-center items-center">
+                {" "}
+                <button
+                  onClick={() =>
+                    handleDownload(activity.id, activity.name, activity.link)
+                  }
+                  disabled={downloadState[activity.id] === "downloading"}
+                  className="cursor-pointer hover:font-semibold   underline "
+                >
+                  {getStatusText(downloadState[activity.id])}
+                </button>
+                {isAuthMode && (
+                  <button className="cursor-pointer hover:font-semibold   text-red-500">
+                    Delete
+                  </button>
+                )}
+              </div>
             </li>
           ))}
         </ul>

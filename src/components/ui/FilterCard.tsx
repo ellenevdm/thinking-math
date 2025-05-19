@@ -19,7 +19,7 @@ const FilterCard: FC<FilterCardProps> = ({
     <div
       data-testid={dataId}
       onClick={() => onClick(id)}
-      className={`border border-gray-200 flex flex-col gap-2 items-center p-1 shadow-sm rounded-xl cursor-pointer ${
+      className={`border border-gray-200 flex flex-col gap-2 items-center p-1 shadow-md rounded-xl cursor-pointer ${
         isActive(id) ? "bg-gray-200" : ""
       }`}
     >

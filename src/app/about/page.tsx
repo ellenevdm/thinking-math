@@ -10,58 +10,76 @@ const AboutPage: FC = () => {
             <div className="w-full flex-col justify-center items-start gap-8 flex">
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <h6 className="text-gray-400 text-base font-normal leading-relaxed">
-                  About Us
+                  About Me
                 </h6>
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                   <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                    The Vision
+                    Helping Teachers Help Children Love and Understand Maths
                   </h2>
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    We believe every pupil has the potential to become a
-                    confident and curious mathematical thinker. Our aim is to
-                    nurture understanding, not just memorisation, so that maths
-                    becomes meaningful, relevant, and even enjoyable.
+                    I believe that every child can do maths — and every teacher
+                    can help make that happen. My role is to support teachers so
+                    they can help children think clearly, solve problems, and
+                    enjoy learning.
                   </p>
                 </div>
               </div>
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                   <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                    Who This Is For
+                    What I Do
                   </h2>
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    Teachers, parents, and tutors who want to move beyond rote
-                    learning and spark genuine interest in mathematics. Whether
-                    you&apos;re looking for inspiration, support, or
-                    ready-to-use materials, you&apos;re in the right place.
+                    Through a programme called KILT, I work with schools in the
+                    Garden Route area to help teachers:
+                    <br />
+                    <br />
+                    • Discover better ways to teach maths for deeper
+                    understanding
+                    <br />
+                    • Use accurate mathematical language, symbols, and methods
+                    <br />• Build a growth mindset in themselves and their
+                    learners
                   </p>
                 </div>
               </div>{" "}
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                   <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                    What We Offer
+                    How I Work
                   </h2>
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    Our resources are designed to promote discussion,
-                    creativity, and independent thought. Whether it&apos;s
-                    downloadable activities, concept explanations, or classroom
-                    tools, everything supports a thinking-first approach to
-                    maths.
+                    I support teachers by running workshops, visiting
+                    classrooms, working with school leaders, and gathering
+                    feedback to keep improving the programme. My experience
+                    ranges from early years to exam preparation, and I also
+                    consult on university-level maths training and assessments.
                   </p>
                 </div>
               </div>{" "}
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
                   <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                    Why Thinking matters
+                    My Approach
                   </h2>
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    In our approach, pupils are encouraged to ask questions,
-                    make connections, and explore ideas. We value reasoning over
-                    repetition, and we guide learners to understand the
-                    &quot;why&quot; behind the methods. This helps build lasting
-                    knowledge and flexible problem-solving skills.
+                    I draw on research from experts like Jo Boaler and Carol
+                    Dweck (growth mindset), Deborah Ball (specialised maths
+                    knowledge for teaching), and Craig Pournara (patterns and
+                    change in maths). I believe maths is not just about numbers
+                    — it’s about thinking. When teachers feel confident, their
+                    learners do too.
+                  </p>
+                </div>
+              </div>
+              <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
+                <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                    The vision
+                  </h2>
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                    Let’s build a world where everyone believes they can do
+                    maths — and has the tools to prove it.
                   </p>
                 </div>
               </div>

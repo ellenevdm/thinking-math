@@ -16,7 +16,7 @@ const FilterToggle: FC<FilterToggleProps> = ({
       {" "}
       <div
         className={`w-full p-1  items-center justify-center rounded-md cursor-pointer ${
-          isActive ? " bg-black text-white" : "bg-gray-200 text-black"
+          isActive ? " bg-gray-900 text-white" : "bg-gray-200 text-black"
         }`}
         onClick={onClick}
       >

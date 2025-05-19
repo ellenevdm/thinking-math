@@ -3,10 +3,5 @@ export type CommentData = {
   date: Date;
   author: string;
   content: string;
-  replies?: {
-    id: string;
-    date: Date;
-    author: string;
-    content: string;
-  }[];
+  replies?: CommentData[];
 };

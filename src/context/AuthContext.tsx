@@ -1,5 +1,12 @@
 "use client";
-import { createContext, FC, ReactNode, useContext, useState } from "react";
+import {
+  createContext,
+  FC,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 type AuthContextType = {
   isAuthMode: boolean;
@@ -12,9 +19,21 @@ export const AuthProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [isAuthMode, setIsAuthMode] = useState(false);
 
   const toggleAuthMode = () => {
-    setIsAuthMode((prev) => !prev);
-    console.log(`Auth mode is now: ${!isAuthMode ? "enabled" : "disabled"}`);
+    setIsAuthMode((prevMode) => {
+      const newMode = !prevMode;
+      console.log(`Auth mode is now: ${newMode ? "enabled" : "disabled"}`);
+      return newMode;
+    });
   };
+
+  useEffect(() => {
+    const storedMode = localStorage.getItem("authMode");
+    if (storedMode) {
+      setIsAuthMode(storedMode === "true");
+    } else {
+      localStorage.setItem("authMode", "false");
+    }
+  }, []);
 
   return (
     <AuthContext.Provider value={{ isAuthMode, toggleAuthMode }}>
