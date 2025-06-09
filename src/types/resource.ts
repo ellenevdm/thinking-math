@@ -1,4 +1,5 @@
 import { Activity } from "./activity";
+import { CommentData } from "./comment";
 
 export type Resource = {
   id: string;
@@ -13,4 +14,10 @@ export type Resource = {
   wakeletcode?: string;
   date: Date;
   activities?: Activity[];
+  comments?: CommentData[];
+};
+
+export type Category = {
+  id: string;
+  name: string;
 };

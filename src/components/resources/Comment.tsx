@@ -5,9 +5,19 @@ interface CommentProps {
   comment: CommentData;
   depth: number;
   onReply: (parentId: string) => void;
+  onDelete?: (id: string, parentId?: string) => void;
+  editMode?: boolean;
+  parentId?: string;
 }
 
-const Comment: FC<CommentProps> = ({ comment, depth, onReply }) => {
+const Comment: FC<CommentProps> = ({
+  comment,
+  depth,
+  onReply,
+  editMode,
+  onDelete,
+  parentId,
+}) => {
   return (
     <div
       className={`comment-item  p-3 flex justify-between items-center ${
@@ -20,13 +30,21 @@ const Comment: FC<CommentProps> = ({ comment, depth, onReply }) => {
         <p className="text-sm text-gray-800 mt-1">{comment.content}</p>
       </div>
       <div className="flex gap-2 items-center">
-        {" "}
         {depth === 0 && (
           <button
             className="reply-button text-primary text-sm underline mt-2 hover:underline"
             onClick={() => onReply(comment.id)}
           >
             Reply
+          </button>
+        )}
+        {editMode && (
+          <button
+            className="text-red-500 text-lg font-bold ml-2"
+            title="Delete"
+            onClick={() => onDelete?.(comment.id, parentId)}
+          >
+            x
           </button>
         )}
       </div>

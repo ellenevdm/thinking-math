@@ -4,6 +4,7 @@ import Link from "next/link";
 import { dateFormat } from "@/lib/utils";
 import Button from "../ui/Button";
 import { useAuth } from "@/context/AuthContext";
+import { useResourceStore } from "@/store/resourceStore";
 
 interface ResourceCardProps {
   resource: Resource;
@@ -11,6 +12,7 @@ interface ResourceCardProps {
 
 const ResourceCard: FC<ResourceCardProps> = ({ resource }) => {
   const { isAuthMode } = useAuth();
+  const deleteResource = useResourceStore((state) => state.deleteResource);
   const {
     id,
     title,
@@ -64,11 +66,10 @@ const ResourceCard: FC<ResourceCardProps> = ({ resource }) => {
         </Link>
         {isAuthMode && (
           <div className="flex gap-1">
-            {" "}
-            <Button variant="secondary" className="w-full mt-2">
-              Edit
-            </Button>
-            <Button className="w-full mt-2 text-red-800 bg-red-200">
+            <Button
+              onClick={() => deleteResource(id)}
+              className="w-full mt-2 text-red-800 bg-red-200"
+            >
               Delete
             </Button>
           </div>

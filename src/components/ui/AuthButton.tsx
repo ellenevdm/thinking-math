@@ -13,7 +13,7 @@ const AuthButton: FC = () => {
       onClick={() => {
         toggleAuthMode();
         if (isAuthMode) {
-          router.push("/");
+          router.push("/resourceList");
         }
       }}
     >

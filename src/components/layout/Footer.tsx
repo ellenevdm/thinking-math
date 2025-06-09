@@ -1,6 +1,9 @@
 "use client";
 
 import { FC } from "react";
+import EmailIcon from "../../../public/svgs/EmailIcon";
+import { LogosLinkedinIcon } from "../../../public/svgs/LinkedInIcon";
+import WhatsAppLogo from "../../../public/svgs/WhatsAppLogo";
 
 const Footer: FC = () => {
   return (
@@ -9,14 +12,14 @@ const Footer: FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center ">
           <h1 className="text-3xl">Thinking Maths</h1>
           <div className="flex space-x-9 items-center justify-around text-lg">
-            <button className="border-2 bg-white text-black font-bold p-2">
-              Email
+            <button className=" bg-none text-black font-bold p-2">
+              <EmailIcon />
             </button>
-            <button className="border-2 bg-white text-black font-bold p-2">
-              LinkedIn
+            <button className=" text-black font-bold p-0 rounded-lg bg-white">
+              <LogosLinkedinIcon />
             </button>
-            <button className="border-2 bg-white text-black font-bold p-2">
-              WhatsApp
+            <button className=" text-black font-bold p-2">
+              <WhatsAppLogo />
             </button>
           </div>
         </div>

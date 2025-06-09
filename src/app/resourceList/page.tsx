@@ -5,21 +5,25 @@ import { FC, useEffect, useState } from "react";
 import ResourceCard from "@/components/resources/ResourceCard";
 import ResourceFiltering from "@/components/resources/ResourceFiltering";
 import { FilterProvider } from "@/context/FilterContext";
-import { resourceCards } from "@/data/dummyResources";
+// import { resourceCards } from "@/data/dummyResources";
 import { useAuth } from "@/context/AuthContext";
 import Link from "next/link";
+import { useResourceStore } from "@/store/resourceStore";
 
 const ResourceListPage: FC = () => {
+  const resources = useResourceStore((state) => state.resources);
   const { isAuthMode } = useAuth();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedGrades, setSelectedGrades] = useState<string[]>([]);
   const [selectedPhases, setSelectedPhases] = useState<string[]>([]);
 
-  const [filteredResources, setFilteredResources] = useState(resourceCards);
+  const [filteredResources, setFilteredResources] = useState(resources);
 
   useEffect(() => {
-    let newResources = [...resourceCards];
+    let newResources = [...resources].sort(
+      (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+    );
 
     if (searchQuery) {
       newResources = newResources.filter((resource) =>
@@ -52,7 +56,13 @@ const ResourceListPage: FC = () => {
     }
 
     setFilteredResources(newResources);
-  }, [searchQuery, selectedCategories, selectedGrades, selectedPhases]);
+  }, [
+    resources,
+    searchQuery,
+    selectedCategories,
+    selectedGrades,
+    selectedPhases,
+  ]);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
@@ -112,9 +122,9 @@ const ResourceListPage: FC = () => {
               resource={{
                 ...card,
                 activities: (card.activities ?? []).map((activity) => ({
-                  id: activity.actId,
-                  name: activity.actName,
-                  link: activity.actLink,
+                  id: activity.id,
+                  name: activity.name,
+                  link: activity.link,
                 })),
               }}
             />

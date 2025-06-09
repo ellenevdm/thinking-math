@@ -7,6 +7,8 @@ import Comment from "./Comment";
 
 interface CommentSectionProps {
   comments: CommentData[];
+  setComments: (comments: CommentData[]) => void;
+  editMode?: boolean;
 }
 
 interface CommentFormInputs {
@@ -14,15 +16,19 @@ interface CommentFormInputs {
   content: string;
 }
 
-const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
+const CommentSection: FC<CommentSectionProps> = ({
+  comments,
+  setComments,
+  editMode,
+}) => {
   const [commentList, setCommentList] = useState(comments);
   const [replyingTo, setReplyingTo] = useState<string | null>(null);
   const { register, handleSubmit, reset } = useForm<CommentFormInputs>();
 
   const onSubmit: SubmitHandler<CommentFormInputs> = ({ author, content }) => {
     if (content.trim()) {
-      setCommentList([
-        ...commentList,
+      setComments([
+        ...comments,
         {
           id: Date.now().toString(),
           date: new Date(),
@@ -40,8 +46,8 @@ const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
     content,
   }) => {
     if (content.trim() && replyingTo) {
-      setCommentList(
-        commentList.map((comment) =>
+      setComments(
+        comments.map((comment) =>
           comment.id === replyingTo
             ? {
                 ...comment,
@@ -63,7 +69,30 @@ const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
     }
   };
 
-  const renderComments = (comments: CommentData[], depth = 0) => {
+  const handleDeleteComment = (id: string, parentId?: string) => {
+    if (!parentId) {
+      // Delete top-level comment
+      setComments(comments.filter((c) => c.id !== id));
+    } else {
+      // Delete reply
+      setComments(
+        comments.map((comment) =>
+          comment.id === parentId
+            ? {
+                ...comment,
+                replies: comment.replies?.filter((r) => r.id !== id) || [],
+              }
+            : comment
+        )
+      );
+    }
+  };
+
+  const renderComments = (
+    comments: CommentData[],
+    depth = 0,
+    parentId?: string
+  ) => {
     return (
       <div className="comment-list space-y-4">
         {comments.map((comment) => (
@@ -72,13 +101,16 @@ const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
               comment={comment}
               depth={depth}
               onReply={(parentId) => setReplyingTo(parentId)}
+              onDelete={handleDeleteComment}
+              editMode={editMode}
+              parentId={parentId}
             />
-            <button
+            {/* <button
               onClick={() => setReplyingTo(comment.id)}
               className="text-primary text-sm hover:underline"
             >
               Reply
-            </button>
+            </button> */}
             {replyingTo === comment.id && (
               <form
                 onSubmit={handleSubmit(handleReplySubmit)}
@@ -104,7 +136,8 @@ const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
                 </button>
               </form>
             )}
-            {comment.replies && renderComments(comment.replies, depth + 1)}
+            {comment.replies &&
+              renderComments(comment.replies, depth + 1, comment.id)}
           </div>
         ))}
       </div>
@@ -136,7 +169,7 @@ const CommentSection: FC<CommentSectionProps> = ({ comments }) => {
           Post
         </button>
       </form>
-      {renderComments(commentList)}
+      {renderComments(comments)}
     </div>
   );
 };

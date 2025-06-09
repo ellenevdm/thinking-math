@@ -1,11 +1,12 @@
 "use client";
-import { categoryCards } from "@/data/dummyCategories";
+// import { categoryCards } from "@/data/dummyCategories";
 import { FC, useState } from "react";
 
 import FilterCard from "../ui/FilterCard";
 import FilterToggle from "../ui/FilterToggle";
 import { gradeCards } from "@/data/dummyGrades";
 import { phaseCards } from "@/data/dummyPhases";
+import { useResourceStore } from "@/store/resourceStore";
 
 interface ResourceFilteringProps {
   searchTerm: string;
@@ -28,6 +29,7 @@ const ResourceFiltering: FC<ResourceFilteringProps> = ({
   onGradeChange,
   onPhaseChange,
 }) => {
+  const categories = useResourceStore((state) => state.categories);
   const [categoryActive, setCategoryActive] = useState(false);
   const [phaseActive, setPhaseActive] = useState(false);
   const [gradeActive, setGradeActive] = useState(false);
@@ -68,7 +70,7 @@ const ResourceFiltering: FC<ResourceFilteringProps> = ({
         />
         {categoryActive && (
           <div className="flex flex-wrap w-full gap-2 items-center justify-start">
-            {categoryCards.map((cat) => (
+            {categories.map((cat) => (
               <FilterCard
                 dataId="category-card"
                 id={cat.id}

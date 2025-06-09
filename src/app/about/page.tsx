@@ -13,10 +13,10 @@ const AboutPage: FC = () => {
                   About Me
                 </h6>
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start ">
                     Helping Teachers Help Children Love and Understand Maths
                   </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start ">
                     I believe that every child can do maths — and every teacher
                     can help make that happen. My role is to support teachers so
                     they can help children think clearly, solve problems, and
@@ -29,7 +29,7 @@ const AboutPage: FC = () => {
                   <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
                     What I Do
                   </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start">
                     Through a programme called KILT, I work with schools in the
                     Garden Route area to help teachers:
                     <br />
@@ -45,10 +45,10 @@ const AboutPage: FC = () => {
               </div>{" "}
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start ">
                     How I Work
                   </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start ">
                     I support teachers by running workshops, visiting
                     classrooms, working with school leaders, and gathering
                     feedback to keep improving the programme. My experience
@@ -59,10 +59,10 @@ const AboutPage: FC = () => {
               </div>{" "}
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start ">
                     My Approach
                   </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start ">
                     I draw on research from experts like Jo Boaler and Carol
                     Dweck (growth mindset), Deborah Ball (specialised maths
                     knowledge for teaching), and Craig Pournara (patterns and
@@ -74,10 +74,10 @@ const AboutPage: FC = () => {
               </div>
               <div className="flex-col justify-start lg:items-start items-center gap-4 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                  <h2 className="text-gray-800 text-4xl font-bold font-manrope leading-normal lg:text-start ">
                     The vision
                   </h2>
-                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start ">
                     Let’s build a world where everyone believes they can do
                     maths — and has the tools to prove it.
                   </p>

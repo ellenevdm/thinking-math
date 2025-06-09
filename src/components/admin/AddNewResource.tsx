@@ -9,14 +9,59 @@ import Input from "../ui/input";
 import Select from "../ui/select";
 import TextArea from "../ui/textarea";
 import Button from "../ui/Button";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useResourceStore } from "@/store/resourceStore";
+import { v4 as uuidv4 } from "uuid";
+import { title } from "process";
+
+const resourceSchema = z.object({
+  title: z.string().min(1, "Title is required"),
+  phase: z.string().min(1, "Phase is required"),
+  grade: z.string().min(1, "Grade is required"),
+  description: z.string().min(1, "Description is required"),
+  category: z.string().min(1, "Category is required"),
+  wakeletcode: z.string().min(1, "Wakelet code is required"),
+});
+
+type ResourceFormData = z.infer<typeof resourceSchema>;
 
 const AddNewResourceForm: FC = () => {
-  const { register, handleSubmit, reset } = useForm<Resource>();
+  const addResource = useResourceStore((state) => state.addResource);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<ResourceFormData>({
+    resolver: zodResolver(resourceSchema),
+  });
+
   const [activities, setActivities] = useState<File[]>([]);
 
-  const onSubmit: SubmitHandler<Resource> = (data) => {
+  const onSubmit: SubmitHandler<ResourceFormData> = (data) => {
+    const newResource = {
+      id: uuidv4(),
+      title: data.title,
+      category: data.category,
+      categoryId: data.category.toLowerCase().replace(/\s+/g, ""),
+      description: data.description,
+      grade: data.grade,
+      gradeId: data.grade.toLowerCase().replace(/\s+/g, ""),
+      phase: data.phase,
+      phaseId: data.phase.toLowerCase().replace(/\s+/g, ""),
+      wakeletcode: data.wakeletcode,
+      date: new Date(),
+      activities: activities.map((file) => ({
+        id: uuidv4(),
+        name: file.name,
+        link: "",
+      })),
+    };
+    addResource(newResource);
     console.info("Form submitted with data:", data);
     console.info("Uploaded activities:", activities);
+    console.info("Form Date:", new Date().toLocaleDateString());
     reset();
     setActivities([]); // Clear the activities array after submission
   };
@@ -29,11 +74,6 @@ const AddNewResourceForm: FC = () => {
     }
   };
 
-  // const handleRemoveFile = (index: number) => {
-  //   setActivities((prevActivities) =>
-  //     prevActivities.filter((_, i) => i !== index)
-  //   );
-  // };
   return (
     <>
       <form
@@ -45,6 +85,11 @@ const AddNewResourceForm: FC = () => {
             <p className="flex flex-col">
               <label className="font-semibold">Resource Title:</label>
               <Input type="text" {...register("title")} />
+              {errors.title && (
+                <span className="text-red-500 text-xs">
+                  {errors.title.message}
+                </span>
+              )}
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Phase</label>
@@ -53,6 +98,11 @@ const AddNewResourceForm: FC = () => {
                 {...register("phase")}
                 defaultLabel="Select Phase"
               />
+              {errors.phase && (
+                <span className="text-red-500 text-xs">
+                  {errors.phase.message}
+                </span>
+              )}
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Grade</label>
@@ -62,6 +112,11 @@ const AddNewResourceForm: FC = () => {
                 optionLabelKey="grade"
                 defaultLabel="Select Grade"
               />
+              {errors.grade && (
+                <span className="text-red-500 text-xs">
+                  {errors.grade.message}
+                </span>
+              )}
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Resource Description:</label>
@@ -69,12 +124,22 @@ const AddNewResourceForm: FC = () => {
                 placeholder="Add a description..."
                 {...register("description")}
               />
+              {errors.description && (
+                <span className="text-red-500 text-xs">
+                  {errors.description.message}
+                </span>
+              )}
             </p>
           </div>
           <div>
             <p className="flex flex-col">
               <label className="font-semibold">Category</label>
               <Input type="text" {...register("category")} />
+              {errors.category && (
+                <span className="text-red-500 text-xs">
+                  {errors.category.message}
+                </span>
+              )}
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Resource Link:</label>
@@ -83,6 +148,11 @@ const AddNewResourceForm: FC = () => {
                 {...register("wakeletcode")}
                 placeholder="Paste wakelet code here"
               />
+              {errors.wakeletcode && (
+                <span className="text-red-500 text-xs">
+                  {errors.wakeletcode.message}
+                </span>
+              )}
             </p>
             <p className="flex flex-col">
               <label className="font-semibold">Upload Activities:</label>

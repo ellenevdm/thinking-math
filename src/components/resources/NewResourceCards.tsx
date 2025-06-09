@@ -29,9 +29,11 @@ const NewResourceCard: FC<NewResourceCardsProps> = ({
       </div>
       <div className="flex my-2 gap-1 w-full flex-wrap ">{grade}</div>
       <div className="font-bold flex flex-col w-full m-2 border-t pt-2 justify-center items-center">
-        <button className="w-full bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive p-2 cursor-pointer ">
-          <Link href={`/resourceList/${id}`}>Go to</Link>
-        </button>
+        <Link href={`/resourceList/${id}`} className="w-full">
+          <button className="w-full bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive p-2 cursor-pointer ">
+            Go to
+          </button>
+        </Link>
       </div>
     </div>
   );
